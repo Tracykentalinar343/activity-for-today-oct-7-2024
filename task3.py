@@ -1,19 +1,20 @@
-choice = input("Remove by index or value?(index/value):")
-numbers = [12,34,43,56,8,78]
-
-if choice.lower() == "index":
-    index = int(input("Enter the index of the element to remove: "))
-    if 0 <= index < len(numbers):
-        numbers.pop(index)
-        print("Element at index {} removed.".format(index))
+names = ["tracy","kent","MC","KENLY"]
+num = input("clear ot not:")
+if num  == "clear":
+    enter = input("who:")
+    if enter == "tracy":
+        names.pop(0)
+        print(names)
+    elif enter == "kent":
+        names.pop(1)
+        print(names)
+    elif enter == "Mc":
+        names.pop(2)
+        print(names)
+    elif enter == "KENLY":
+        names.pop(3)
+        print(names)
     else:
-        print("Invalid index.")
-elif choice.lower() == "value":
-    value = int(input("Enter the value of the element to remove: "))
-    if value in numbers:
-        numbers.remove(value)
-        print("Element with value {} removed.".format(value))
-    else:
-        print("Value not found in the list.")
+        print("error")
 else:
-    print("Invalid choice.")
+    print("names")

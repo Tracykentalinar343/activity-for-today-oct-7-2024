@@ -1,0 +1,11 @@
+names = ["tracy","kent","MC","KENLY"]
+user = input("user choice. either sort the list alphabitically or reverse(sort or reverse")).lower()
+
+if user == "sort":
+    names.sort()
+    print(names)
+elif user == "reverse":
+    names.reverse()
+    print(names)
+else:
+    print("invlaid choice")
